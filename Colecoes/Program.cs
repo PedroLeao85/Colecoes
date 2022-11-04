@@ -6,21 +6,25 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
-            int [,] matriz = new int [4,2]
-            {
-                { 8, 8 },
-                { 10, 2 },
-                { 3, 4 },
-                { 50 , 100}
-            };
+            
+            
+            
+            
+            // int [,] matriz = new int [4,2]
+            // {
+            //     { 8, 8 },
+            //     { 10, 2 },
+            //     { 3, 4 },
+            //     { 50 , 100}
+            // };
 
-            for (int i = 0; i < matriz.GetLength(0); i++)
-            {
-                for (int j = 0; j< matriz.GetLength(1); j++)
-                {
-                    System.Console.WriteLine(matriz[i,j]);
-                }
-            }
+            // for (int i = 0; i < matriz.GetLength(0); i++)
+            // {
+            //     for (int j = 0; j< matriz.GetLength(1); j++)
+            //     {
+            //         System.Console.WriteLine(matriz[i,j]);
+            //     }
+            // }
 
             
             
