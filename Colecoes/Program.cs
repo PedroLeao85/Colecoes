@@ -6,22 +6,42 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
-            int[] arrayInteiros = new int [3];
-
-            arrayInteiros[0] = 15;
-            arrayInteiros[1] = 10;
-            arrayInteiros[2] = 20;
-
-            System.Console.WriteLine("Percorrendo o array pelo For");
-            for (int i = 0 ; i < arrayInteiros.Length ; i++)
+            int [,] matriz = new int [4,2]
             {
-                System.Console.WriteLine(arrayInteiros[i]);
-            }
-            System.Console.WriteLine("Percorrendo o array pelo ForEach");
-            foreach (int item in arrayInteiros)
+                { 8, 8 },
+                { 10, 2 },
+                { 3, 4 },
+                { 50 , 100}
+            };
+
+            for (int i = 0; i < matriz.GetLength(0); i++)
             {
-                System.Console.WriteLine(item);
+                for (int j = 0; j< matriz.GetLength(1); j++)
+                {
+                    System.Console.WriteLine(matriz[i,j]);
+                }
             }
+
+            
+            
+            
+            // int[] arrayInteiros = new int [3];
+
+            // arrayInteiros[0] = 15;
+            // arrayInteiros[1] = 10;
+            // arrayInteiros[2] = int.Parse("30");
+            // arrayInteiros[3] = 30;
+
+            // System.Console.WriteLine("Percorrendo o array pelo For");
+            // for (int i = 0 ; i < arrayInteiros.Length ; i++)
+            // {
+            //     System.Console.WriteLine(arrayInteiros[i]);
+            // }
+            // System.Console.WriteLine("Percorrendo o array pelo ForEach");
+            // foreach (int item in arrayInteiros)
+            // {
+            //     System.Console.WriteLine(item);
+            // }
         }
     }
 }
