@@ -13,7 +13,8 @@ namespace Colecoes
             System.Console.WriteLine("Array original: ");
             op.ImprimirArray(array);
 
-            op.OrdenarBubbleSort(ref array);
+            //op.OrdenarBubbleSort(ref array);
+              op.Ordenar(ref array);  
 
             System.Console.WriteLine("Array Ordenado");
             op.ImprimirArray(array);
