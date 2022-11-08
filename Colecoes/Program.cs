@@ -11,17 +11,30 @@ namespace Colecoes
             int[] array = new int[5] { 6, 3, 8, 1, 9 };
             int[] arrayCopia = new int[10];
 
-            int valorProcurado = 10;
-            bool Existe = op.Existe(array, valorProcurado);
+            int valorProcurado = 0;
+            bool todosMaiorQue = op.todosMaiorQue(array, valorProcurado);
 
-            if(Existe)
+            if(todosMaiorQue)
             {
-                System.Console.WriteLine("Encontrei o valor: {0}", valorProcurado);
+                System.Console.WriteLine("Todos os valores são maiores que: {0} ", valorProcurado);
             }
             else
             {
-                System.Console.WriteLine("Não encontrei o valor: {0}", valorProcurado);
+                System.Console.WriteLine("Existe valores que não são maiores que {0}", valorProcurado);
             }
+            
+            
+            // int valorProcurado = 10;
+            // bool Existe = op.Existe(array, valorProcurado);
+
+            // if(Existe)
+            // {
+            //     System.Console.WriteLine("Encontrei o valor: {0}", valorProcurado);
+            // }
+            // else
+            // {
+            //     System.Console.WriteLine("Não encontrei o valor: {0}", valorProcurado);
+            // }
             
             //System.Console.WriteLine("Array original: ");
             //op.ImprimirArray(array);
