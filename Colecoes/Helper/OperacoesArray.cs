@@ -23,6 +23,9 @@ namespace Colecoes.Helper
             }
         }
 
+        
+
+        
         public void ImprimirArray(int[] array)
         {
             var linha = string.Join(", ", array);

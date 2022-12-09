@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Colecoes.Helper;
 
 namespace Colecoes
@@ -7,18 +8,36 @@ namespace Colecoes
     {
         static void Main(string[] args)
         {
-            OperacoesArray op = new OperacoesArray();
-            int[] array = new int[5] { 6, 3, 8, 1, 9 };
-            int[] arrayCopia = new int[10];
-            string[] arrayString = op.ConverterParaArrayString(array);
+            OperacoesLista opLista = new OperacoesLista();
+            List<string> estados = new List<string>();
+            estados.Add("SP");
+            estados.Add("MG");
+            estados.Add("BA");
 
-            //int valorProcurado = 9;
+            System.Console.WriteLine($"Quantidade de elementos na lista: {estados.Count}");
 
-            System.Console.WriteLine($"Capacidade atual do array: {array.Length}");
+            opLista.ImprimirListaString(estados);
 
-            op.RedimensionarArray(ref array, array.Length * 2);
+            System.Console.WriteLine("Removendo o elemento");
+            estados.Remove("MG");
+            opLista.ImprimirListaString(estados);
+            
 
-            System.Console.WriteLine($"Capacidade atual do array após redimensionar: {array.Length}");
+
+
+
+            // OperacoesArray op = new OperacoesArray();
+            // int[] array = new int[5] { 6, 3, 8, 1, 9 };
+            // int[] arrayCopia = new int[10];
+            // string[] arrayString = op.ConverterParaArrayString(array);
+
+            // int valorProcurado = 9;
+
+            // System.Console.WriteLine($"Capacidade atual do array: {array.Length}");
+
+            // op.RedimensionarArray(ref array, array.Length * 2);
+
+            // System.Console.WriteLine($"Capacidade atual do array após redimensionar: {array.Length}");
 
 
 
